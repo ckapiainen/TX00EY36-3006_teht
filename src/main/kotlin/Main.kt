@@ -1,30 +1,15 @@
 package app
 
 import app.lab02.Kahvinkeitin
+import app.lab03.Fraction
 
 fun main() {
-    val k = Kahvinkeitin()
-    println(k)
-    k.taytaVesiSailio()
-    k.taytaKahviSailio()
-    println(k)
-    println("espressoja: ${k.espressoja}")
-    println("tavallisia: ${k.tavallisia}")
-    println("tee espresso: ${k.teeEspresso()}")
-    println(k)
-    k.painaOnOffNappia()
-    println("tee tavallinen kahvi: ${k.teeTavallinenKahvi()}")
-    println(k)
-    for (i in 0..4) {
-        println("tee espresso: ${k.teeEspresso()}")
-        println(k)
-    }
-    println("espressoja: ${k.espressoja}")
-    println("tavallisia: ${k.tavallisia}")
-    k.taytaVesiSailio()
-    println(k)
-    for (i in 0..4) {
-        println("tee espresso: ${k.teeEspresso()}")
-        println(k)
-    }
+    val a = Fraction(1,2,-1)
+    println(a)
+    println(a.add(Fraction(1,3)))
+    println(a.mult(Fraction(5,2, -1)))
+    println(a.div(Fraction(2,1)))
+    println(-Fraction(1,6) + Fraction(1,2))
+    println(Fraction(2,3) * Fraction(3,2))
+    println(Fraction(1,2) > Fraction(2,3))
 }
